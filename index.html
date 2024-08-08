@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card Purchase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gift Card Purchasing Site</h1>
+        <div class="gift-card-selection">
+            <h2>Select a Design</h2>
+            <div class="designs">
+                <div class="design" id="design1" onclick="selectDesign('Design 1', 'Mother\'s Day')">
+                    <img src="https://imgs.search.brave.com/RudYLTj6whtFov_QahAnKlOQP3yo34OCwTzRf95Csc0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzI1NjM1MjQxL3Iv/aWwvNGZjYWJiLzU5/ODY5OTIwNjkvaWxf/NjAweDYwMC41OTg2/OTkyMDY5X2dlMTEu/anBn" alt="Design 1">
+                    <p>Mother's Day Gift Card</p>
+                </div>
+                <div class="design" id="design2" onclick="selectDesign('Design 2', 'Happy Birthday')">
+                    <img src="https://imgs.search.brave.com/9C1OxWZ8ySk6BdGXnnGDJBBNqw8lPh1lOXwBhdNEauk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9kb3dubG9h/ZHMvM2VkNGM2NzIt/ZDkxZS00NmNiLWFi/ZDktZmRhYjc3Y2Ex/NmUyXzQ1MC5qcGVn" alt="Design 2">
+                    <p>Happy Birthday Card</p>
+                </div>
+                <div class="design" id="design3" onclick="selectDesign('Design 3', 'Happy Birthday Crane Style')">
+                    <img src="https://imgs.search.brave.com/N_8Qm6uO1akHq5dJTigwmrLbGceW6ALxFLl7eR3kEGY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzg3MDkw/MS9zY3JlZW5zaG90/cy8xNjQ1NTM3Ni9t/ZWRpYS9iMTE3MTY1/YTJiYWYzNTAyZWYy/NGFhMjI0YTIwMmU5/Zi5wbmc_cmVzaXpl/PTQwMHgw" alt="Design 3">
+                    <p>Happy Birthday Crane gift card</p>
+                </div>
+            </div>
+        </div>
+        <div class="amount-selection">
+            <h2>Select an Amount</h2>
+            <select id="amount">
+                <option value="25">$25</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+            </select>
+        </div>
+        <button onclick="purchaseGiftCard()">Purchase Gift Card</button>
+        <p id="confirmation"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
